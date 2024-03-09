@@ -6,9 +6,9 @@
   :root {
     /* Primitives Tokens  */
     --clr-white: 0 0% 100%;
-    --clr-dark-grey: 0 0% 10%;
+    --clr-black: 0 0% 0%;
     /* Sementics Tokens */
-    --foreground: var(--clr-dark-grey);
+    --foreground: var(--clr-black);
     --background: var(--clr-white);
 
     --radius: 0.5rem;
