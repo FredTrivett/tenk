@@ -10,7 +10,7 @@ export default function FilmDeSemaine({ films }) {
 
     return (
         <>
-            <h2 className='text-6xl lg:text-8xl font-semibold px-6 lg:px-28 pb-6'>
+            <h2 className='title-style'>
                 Film de la semaine
             </h2>
             {isMobile ? (

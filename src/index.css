@@ -20,3 +20,7 @@
     
   }
 }
+
+.title-style {
+  @apply lg:text-8xl text-6xl pb-6 pt-10 font-semibold px-6 lg:px-28 lg:pb-12 lg:pt-20;
+}

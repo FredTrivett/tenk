@@ -46,7 +46,7 @@ export default function NavBar() {
         </div>
       </div>
       {/* Progress Bar */}
-      <div className='relative h-2 bg-background'>
+      <div className='relative h-1 bg-background'>
         <div className='h-1 bg-primary z-50 absolute top-0 left-0' style={{
           width: `${scrollProgress}%`,
           transition: 'width 0.2s ease-out',
