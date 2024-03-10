@@ -7,6 +7,8 @@
     /* Primitives Tokens  */
     --clr-white: 0 0% 100%;
     --clr-black: 0 0% 0%;
+    --clr-primary: 185 100% 63%;
+    --clr-secondary: 0 0% 48%;
     /* Sementics Tokens */
     --foreground: var(--clr-black);
     --background: var(--clr-white);

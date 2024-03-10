@@ -2,11 +2,11 @@
     {
         "id": 1,
         "nom": "Inception",
-        "réalisateur": "Christopher Nolan",
+        "realisateur": "Christopher Nolan",
         "description": "Un voleur, qui s'infiltre dans les rêves d'autrui, a pour mission d'implanter une idée dans l'esprit d'un individu.",
-        "catégorie": "Science-fiction",
-        "disponibilité": 30,
-        "durée": 148,
+        "categorie": "Science-fiction",
+        "disponibilite": 30,
+        "duree": 148,
         "langues_disponibles": [
             "Anglais",
             "Français"
@@ -19,16 +19,18 @@
         "année_production": 2010,
         "pays_production": "États-Unis",
         "image_url": "film/inception.jpg",
-        "video_url": "https://example.com/inception.mp4"
+        "video_url": "https://example.com/inception.mp4",
+        "film_de_semaine": true,
+        "mise_en_avant": false
     },
     {
         "id": 2,
         "nom": "Le Labyrinthe",
-        "réalisateur": "Wes Ball",
+        "realisateur": "Wes Ball",
         "description": "Des adolescents sont piégés dans un labyrinthe et doivent trouver comment s'échapper, en dévoilant les sombres secrets de l'endroit.",
-        "catégorie": "Science-fiction",
-        "disponibilité": "Accès Libre",
-        "durée": 113,
+        "categorie": "Science-fiction",
+        "disponibilite": "Accès Libre",
+        "duree": 113,
         "langues_disponibles": [
             "Anglais",
             "Français"
@@ -41,16 +43,18 @@
         "année_production": 2014,
         "pays_production": "États-Unis",
         "image_url": "film/labyrinth.jpg",
-        "video_url": "https://example.com/lelabyrinthe.mp4"
+        "video_url": "https://example.com/lelabyrinthe.mp4",
+        "film_de_semaine": true,
+        "mise_en_avant": false
     },
     {
         "id": 3,
         "nom": "Les Évadés",
-        "réalisateur": "Frank Darabont",
+        "realisateur": "Frank Darabont",
         "description": "Accusé du meurtre de sa femme, un homme est envoyé dans une prison de haute sécurité, où il forme une amitié remarquable.",
-        "catégorie": "Drame",
-        "disponibilité": 45,
-        "durée": 142,
+        "categorie": "Drame",
+        "disponibilite": 45,
+        "duree": 142,
         "langues_disponibles": [
             "Anglais"
         ],
@@ -61,16 +65,18 @@
         "année_production": 1994,
         "pays_production": "États-Unis",
         "image_url": "film/lesevades.jpg",
-        "video_url": "https://example.com/lesevades.mp4"
+        "video_url": "https://example.com/lesevades.mp4",
+        "film_de_semaine": true,
+        "mise_en_avant": false
     },
     {
         "id": 4,
         "nom": "Interstellar",
-        "réalisateur": "Christopher Nolan",
+        "realisateur": "Christopher Nolan",
         "description": "Des explorateurs utilisent un trou de ver dans l'espace pour assurer la survie de l'humanité.",
-        "catégorie": "Science-fiction",
-        "disponibilité": 60,
-        "durée": 169,
+        "categorie": "Science-fiction",
+        "disponibilite": 60,
+        "duree": 169,
         "langues_disponibles": [
             "Anglais"
         ],
@@ -82,16 +88,18 @@
         "année_production": 2014,
         "pays_production": "États-Unis",
         "image_url": "film/interstellar.jpg",
-        "video_url": "https://example.com/interstellar.mp4"
+        "video_url": "https://example.com/interstellar.mp4",
+        "film_de_semaine": false,
+        "mise_en_avant": true
     },
     {
         "id": 5,
         "nom": "Le Parrain",
-        "réalisateur": "Francis Ford Coppola",
+        "realisateur": "Francis Ford Coppola",
         "description": "L'histoire d'une dynastie de la mafia sicilienne aux États-Unis, sous le règne du patriarche Vito Corleone.",
-        "catégorie": "Crime",
-        "disponibilité": 30,
-        "durée": 175,
+        "categorie": "Crime",
+        "disponibilite": 30,
+        "duree": 175,
         "langues_disponibles": [
             "Anglais",
             "Italien"
@@ -103,6 +111,8 @@
         "année_production": 1972,
         "pays_production": "États-Unis",
         "image_url": "film/leparrain.jpg",
-        "video_url": "https://example.com/leparrain.mp4"
+        "video_url": "https://example.com/leparrain.mp4",
+        "film_de_semaine": true,
+        "mise_en_avant": true
     }
 ]
