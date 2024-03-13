@@ -1,25 +1,28 @@
-import React from 'react';
-import FilmDeSemaineMobile from './FilmDeSemaineMobile';
-import FilmDeSemaineDesktop from './FilmDeSemaineDesktop';
+import React, { useState } from 'react';
+import FilmCard from "../Film/FilmCard";
+import FilmCardSimple from "../Film/FilmCardSimple";
 
 export default function FilmDeSemaine({ films }) {
-    const isMobile = window.screen.width <= 768; // Check if the screen width is less than or equal to 768
-
-    // Filter films to include only those with film_de_semaine set to true
-    const filmsDeLaSemaine = films.filter(film => film.film_de_semaine);
+    const [selectedFilm, setSelectedFilm] = useState(films[0]);
 
     return (
-        <>
-            <h2 className='title-style'>
+        <section className='px-28'>
+            <h2 className='lg:text-8xl text-6xl pb-6 pt-10 font-semibold px-6 lg:px-0 lg:pb-12 lg:pt-20'>
                 Film de la semaine
             </h2>
-            {isMobile ? (
-                // Pass filtered films as a prop to FilmDeSemaineMobile
-                <FilmDeSemaineMobile films={filmsDeLaSemaine} />
-            ) : (
-                // Pass filtered films as a prop to FilmDeSemaineDesktop
-                <FilmDeSemaineDesktop films={filmsDeLaSemaine} />
-            )}
-        </>
+            <div className='grid grid-cols-1 gap-4'>
+                <FilmCard {...selectedFilm} />
+            </div>
+            <div className="grid grid-cols-4 gap-4 pt-4">
+                {films.map(film => (
+                    <div
+                        key={film.id}
+                        onMouseEnter={() => setSelectedFilm(film)} // Update state on hover
+                    >
+                        <FilmCardSimple {...film} isSelected={selectedFilm.id === film.id} />
+                    </div>
+                ))}
+            </div>
+        </section>
     );
 }

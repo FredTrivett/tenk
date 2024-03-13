@@ -7,7 +7,6 @@ import Categorie from '../ui/Categorie';
 
 export default function Root() {
   const films = useLoaderData();
-  const isMobile = window.screen.width <= 768; // Check if the screen width is less than or equal to 768
 
   return (
     <>

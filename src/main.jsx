@@ -9,7 +9,7 @@ import './index.css';
 const router = createBrowserRouter([
   {
     path: '/',
-    // errorElement: <ErrorPage />,
+    errorElement: <ErrorPage />,
     element: <Root />,
     loader: fetchFilmData,
     // children: [

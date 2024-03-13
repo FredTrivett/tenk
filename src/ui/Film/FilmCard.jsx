@@ -1,10 +1,9 @@
-export default function FilmCardDesktop({ nom, realisateur, image_url, description, categorie, disponibilite, duree }) {
+export default function FilmCard({ nom, realisateur, image_url, description, categorie, disponibilite, duree }) {
 
     return (
-        <section className='grid grid-cols-2 gap-4'>
+        <figure className='grid grid-cols-2 gap-4'>
             <div className="card bg-white relative overflow-hidden group cursor-pointer">
-                <img src={image_url} alt={nom} className="w-full h-auto z-0 group-hover:grayscale" />
-                <div className="absolute top-0 left-0 w-full h-full bg-primary z-10 mix-blend-multiply opacity-0 group-hover:opacity-100"></div>
+                <img src={image_url} alt={nom} className="w-full h-auto z-0 " />
                 <div className="px-3 py-2 z-40 top-0 absolute">
                     <h5 className="text-xl text-shadow-xl tracking-wider text-background">{nom}</h5>
                     <p className="text-background text-shadow-xl text-xs tracking-wide font-light ">{realisateur}</p>
@@ -54,6 +53,6 @@ export default function FilmCardDesktop({ nom, realisateur, image_url, descripti
                 <p className='text-secondary pb-2'>{categorie}</p>
             </div>
 
-        </section>
+        </figure>
     );
 }
