@@ -1,9 +1,18 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import FilmCard from "../Film/FilmCard";
 import FilmCardSimple from "../Film/FilmCardSimple";
 
 export default function FilmDeSemaine({ films }) {
-    const [selectedFilm, setSelectedFilm] = useState(films[0]);
+    // Filter films to include only those with film_de_semaine = true
+    const filmsDeLaSemaine = films.filter(film => film.film_de_semaine);
+
+    // Initialize selectedFilm with the first film from the filtered list
+    const [selectedFilm, setSelectedFilm] = useState(filmsDeLaSemaine[0]);
+
+    // Update selectedFilm when films prop changes to ensure it always has a valid film
+    useEffect(() => {
+        setSelectedFilm(filmsDeLaSemaine[0]);
+    }, [films]);
 
     return (
         <section className='px-28'>
@@ -11,15 +20,15 @@ export default function FilmDeSemaine({ films }) {
                 Film de la semaine
             </h2>
             <div className='grid grid-cols-1 gap-4'>
-                <FilmCard {...selectedFilm} />
+                {selectedFilm && <FilmCard {...selectedFilm} />}
             </div>
             <div className="grid grid-cols-4 gap-4 pt-4">
-                {films.map(film => (
+                {filmsDeLaSemaine.map(film => (
                     <div
                         key={film.id}
                         onMouseEnter={() => setSelectedFilm(film)} // Update state on hover
                     >
-                        <FilmCardSimple {...film} isSelected={selectedFilm.id === film.id} />
+                        <FilmCardSimple {...film} isSelected={selectedFilm && selectedFilm.id === film.id} />
                     </div>
                 ))}
             </div>
